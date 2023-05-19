@@ -1,7 +1,14 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 :root {
-    --primary: rgb(21, 78, 139);
+    --primary: rgb(33, 41, 48);
+    --default-layout-header-height: 60px;
+    --default-layout-header-width: 1150px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-size: 62.5%;
