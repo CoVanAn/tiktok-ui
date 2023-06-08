@@ -1,5 +1,8 @@
 .menu-list {
     width: 224px;
+    .menu-item {
+        margin-left: 0;
+    }
 }
 
 .menu-popper {
@@ -8,16 +11,41 @@
 
 // Menu items
 .menu-item {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
+    font-weight: 600;
     font-size: 1.6rem;
     text-align: left;
     width: 100%;
+    height: 50px;
     justify-content: flex-start;
-    margin-left: 0;
     border-radius: 0;
     padding: 11px 16px;
     background: none;
+
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+
     &:hover {
         background-color: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
     }
+}
+//header of menu
+.header {
+    position: relative;
+    height: 50px;
+    margin-top: -8px;
+}
+.back-btn {
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
