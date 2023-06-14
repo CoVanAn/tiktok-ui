@@ -11,7 +11,6 @@ const cx = classNames.bind(styles);
 const defaultFn = () => {};
 function Menu({ children, items = [], onChange = defaultFn }) {
     const [history, setHistory] = useState([{ data: items }]);
-    // const current = history[0];
     console.log(history[history.length - 1]);
     const current = history[history.length - 1];
     const renderItems = () => {
